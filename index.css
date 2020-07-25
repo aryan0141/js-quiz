@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: #1d2044;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+.contain h3{
+    font-weight: lighter;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+input,label{
+    padding: 10px;
+    font-size: 30px;
+}
+
+#next{
+    /* width: 100px; */
+    font-size: 30px;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    background: none;
+    margin: auto;
+    text-align: center;
+    padding: 6px 20px;
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out;
+}
+#next:active{
+    background-color: white;
+    color: #1d2044;
+}
+#quizform{
+    line-height: 2em;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 10%;
+    outline: none;
+    height: 17px;
+}
