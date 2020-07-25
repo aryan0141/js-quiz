@@ -14,11 +14,11 @@ let questions = {
 let answers = {
     1: ["Agra", "New Delhi", "Kanpur", "Indore"],
     2: ["Kostroma", "Samara", "Kazan", "Moscow"],
-    3: ["Washington","Newyork","Chicago","Boston"],
-    4: ["Nice","Paris","Lyon","Toulouse"],
+    3: ["Washington", "Newyork", "Chicago", "Boston"],
+    4: ["Nice", "Paris", "Lyon", "Toulouse"],
 };
 
-let correct = ["New Delhi","Moscow","Washington","Paris"];
+let correct = [16,"New Delhi", "Moscow", "Washington", "Paris"];
 // console.log(Object.keys(questions).length)
 function changequestion() {
     let rbs = document.querySelectorAll('input[name="answers"]');
@@ -30,7 +30,7 @@ function changequestion() {
         if (rb.checked) {
             // console.log(rb.innerHTML)
             selectedValue = rb.value;
-            // console.log(selectedValue)
+            console.log(selectedValue)
             // console.log(correct[count-2])
             if (selectedValue == correct[count - 1]) {
                 earned_marks += 5;
@@ -45,7 +45,7 @@ function changequestion() {
 
     if (count <= Number(Object.keys(questions).length)) {
 
-        question_title.innerText = count + " ) " + questions[count];
+        question_title.innerText = (count + 1) + " ) " + questions[count];
         let arr = answers[count];
         // console.log(arr)
         for (let index = 0; index < arr.length; index++) {
@@ -58,7 +58,7 @@ function changequestion() {
         count++;
     }
     else {
-        document.body.innerHTML = `<h1 style="text-align:center;">You got ${earned_marks} marks and refresh the page for again.</h1>`
+        document.body.innerHTML = `<h1 style="text-align:center;">You got ${earned_marks} marks and refresh the page for more attempts.</h1>`
 
     }
 }
