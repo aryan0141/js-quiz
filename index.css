@@ -23,6 +23,7 @@ body{
 }
 
 input,label{
+    line-height: 40px;
     padding: 10px;
     font-size: 30px;
 }
@@ -37,7 +38,7 @@ input,label{
     margin: auto;
     text-align: center;
     padding: 6px 20px;
-    margin-top: 10px;
+    margin-top: 25px;
     transition: all 0.2s ease-in-out;
 }
 #next:active{
