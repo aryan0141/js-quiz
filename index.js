@@ -34,7 +34,7 @@ function changequestion() {
             // console.log(correct[count-2])
             if (selectedValue == correct[count - 1]) {
                 earned_marks += 5;
-                console.log(earned_marks)
+                //console.log(earned_marks)
             }
             rb.checked = false;
             break;
@@ -61,7 +61,9 @@ function changequestion() {
         document.body.innerHTML = `<h1 style="text-align:center;">You got ${earned_marks} marks and refresh the page for more attempts.</h1>`
 
     }
+
 }
 next.addEventListener("click", changequestion);
+
 // console.log(question_title.innerText)
 // console.log(options[0].innerText)
