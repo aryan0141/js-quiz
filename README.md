@@ -1,2 +1,2 @@
 # js-quiz
-This is a javascript quiz
+This is a javascript quiz .
